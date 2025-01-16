@@ -16,7 +16,7 @@ void test(){
         Connection conn;
         //std::cin>>name>>sex>>age;
         std::string sql = "INSERT INTO user (name, age, sex) VALUES ('" + name + "', " + std::to_string(age) + ", '" + sex + "');";
-        conn.connect("127.0.0.1",3306,"root","Xsk2825394371.","chat");
+        conn.connect("127.0.0.1",3306,"root","********","chat");
         conn.update(sql);
     }
     clock_t end=clock();
@@ -91,7 +91,7 @@ void test4(){
         Connection conn;
         //std::cin>>name>>sex>>age;
         std::string sql = "INSERT INTO user (name, age, sex) VALUES ('" + name + "', " + std::to_string(age) + ", '" + sex + "');";
-        conn.connect("127.0.0.1",3306,"root","Xsk2825394371.","chat");
+        conn.connect("127.0.0.1",3306,"root","********","chat");
         conn.update(sql);
     }
     });
@@ -100,7 +100,7 @@ void test4(){
         Connection conn;
         //std::cin>>name>>sex>>age;
         std::string sql = "INSERT INTO user (name, age, sex) VALUES ('" + name + "', " + std::to_string(age) + ", '" + sex + "');";
-        conn.connect("127.0.0.1",3306,"root","Xsk2825394371.","chat");
+        conn.connect("127.0.0.1",3306,"root","*******","chat");
         conn.update(sql);
     }
     });
@@ -109,7 +109,7 @@ void test4(){
         Connection conn;
         //std::cin>>name>>sex>>age;
         std::string sql = "INSERT INTO user (name, age, sex) VALUES ('" + name + "', " + std::to_string(age) + ", '" + sex + "');";
-        conn.connect("127.0.0.1",3306,"root","Xsk2825394371.","chat");
+        conn.connect("127.0.0.1",3306,"root","*******","chat");
         conn.update(sql);
     }
     });
@@ -118,7 +118,7 @@ void test4(){
         Connection conn;
         //std::cin>>name>>sex>>age;
         std::string sql = "INSERT INTO user (name, age, sex) VALUES ('" + name + "', " + std::to_string(age) + ", '" + sex + "');";
-        conn.connect("127.0.0.1",3306,"root","Xsk2825394371.","chat");
+        conn.connect("127.0.0.1",3306,"root","*******","chat");
         conn.update(sql);
     }
     });
@@ -131,7 +131,6 @@ void test4(){
 }
 int main()
 {
-    //数据库连接池只要1355 ms真他娘的快
     //std::cout<<"hello world"<<std::endl;
     test4();
     return 0;
